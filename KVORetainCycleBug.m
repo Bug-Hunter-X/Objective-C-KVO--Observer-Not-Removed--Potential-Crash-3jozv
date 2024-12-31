@@ -1,0 +1,1 @@
+This bug occurs when using KVO (Key-Value Observing) in Objective-C.  The observer might not be properly removed, leading to crashes or unexpected behavior after the observed object is deallocated. This often happens when the observer is a strong reference to the observed object, creating a retain cycle.
